@@ -95,4 +95,4 @@ Contributions are welcome! Feel free to fork the repository, create a branch, an
 ## 👨‍💻 Author
 **Your Name**  
 - GitHub: [@rajanarahul93](https://github.com/rajanarahul93)  
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/vara-rahul-rajana)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/vara-rahul-rajana)
