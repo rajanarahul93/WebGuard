@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #1e293b, #334155);
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #38bdf8;
+}
+
+header p {
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #334155;
+    color: #f1f5f9;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+form input::placeholder {
+    color: #64748b;
+}
+
+form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #38bdf8;
+    color: #1e293b;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #0ea5e9;
+}
+
+.hidden {
+    display: none;
+}
+
+#results-section h2 {
+    font-size: 1.5rem;
+    color: #fbbf24;
+}
+
+#crawled-links, #vulnerabilities {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #475569;
+}
+
+#crawled-links h3, #vulnerabilities h3 {
+    font-size: 1.2rem;
+    color: #38bdf8;
+}
+
+#links-list, #vulnerability-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+#links-list li, #vulnerability-list li {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: #1e293b;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#links-list li a {
+    color: #38bdf8;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+#links-list li a:hover {
+    text-decoration: underline;
+}

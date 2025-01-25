@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Vulnerability Scanner</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Vulnerability Scanner</h1>
+        <form method="POST" action="/scan">
+            <input type="text" name="url" placeholder="Enter website URL" required>
+            <button type="submit">Scan</button>
+        </form>
+        {% if url %}
+        <h2>Results for: {{ url }}</h2>
+        <h3>Crawled Links:</h3>
+        <ul>
+            {% for link in links %}
+            <li>{{ link }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Vulnerability Detection:</h3>
+        <p>{{ sql_injection_result }}</p>
+        <p>{{ xss_result }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
