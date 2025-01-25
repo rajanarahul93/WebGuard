@@ -82,11 +82,6 @@ http://127.0.0.1:5000/
 
 ---
 
-## 📄 License
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## 🤝 Contributing
 Contributions are welcome! Feel free to fork the repository, create a branch, and submit a pull request.
 
